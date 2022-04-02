@@ -15,10 +15,13 @@ public class About{
     public String getUsername(){
         return this.username;
     }
+    public void welcomeVisitor(){
+        System.out.println(this.getUsername()+" welcome you ❤️");
+        System.out.println("Thank you for visiting my github profile, hope you'll like my work :p");
+    }
     public static void main(String[] args) {
         About user = new About("rogerthat07");
-        System.out.println(user.getUsername()+" welcome you ❤️");
-        System.out.println("Thank you for visiting my github profile, hope you'll like my work :p");
+        user.welcomeVisitor();
     }
 }
 ```
